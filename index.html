@@ -64,7 +64,7 @@
   padding: 0;
   min-height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url("https://t3.ftcdn.net/jpg/02/34/28/34/360_F_234283412_IwJqNEdqANdPI8PSyFRmeLj57X0zDYXM.jpg");
+  background-image: url("https://www.spectrumhealth.ie/wp-content/uploads/2017/11/steamingcupofcoffeewithspiltcoffeebeans.jpg.webp");
   background-color: transparent !important;
   background-size: flex;
   background-repeat: no-repeat;
@@ -1045,13 +1045,8 @@ s0.parentNode.insertBefore(s1,s0);
     products.forEach(product => {
       const row = document.createElement("tr");
       row.innerHTML = `
-        <td><img src="${product.image}" alt="${product.name}" width="60"></td>
         <td>${product.name}</td>
         <td>${product.price} EGP</td>
-        <td>${product.stock}</td>
-        <td>
-          <button class="btn-glow">Add to Cart</button>
-        </td>
       `;
       table.appendChild(row);
     });
