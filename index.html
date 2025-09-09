@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://media.discordapp.net/attachments/1212933561284431894/1415008313405603952/3B6E43C6-3D8F-479F-9FE1-0D7FD61F85B3.png?ex=68c1a4af&is=68c0532f&hm=ce3af5cfee04d002877cd6a49e7342853708516b39fef75d88fc7c35856dce73&=&format=webp&quality=lossless&width=350&height=350" type="image/webp">
@@ -33,6 +34,12 @@
   border-radius: 8px;
   box-shadow: 0 0 10px #9333ea;
 }
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;  /* mobile browsers ignore fixed */
+    background-position: center top; /* keep the main part visible */
+  }
+}
 .logo-text {
   display: flex;
   flex-direction: column;
@@ -64,7 +71,7 @@
   padding: 0;
   min-height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url("https://www.spectrumhealth.ie/wp-content/uploads/2017/11/steamingcupofcoffeewithspiltcoffeebeans.jpg.webp");
+  background-image: url("https://www.spectrumhealth.ie/wp-content/uploads/2017/11/steamingcupofcoffeewithspiltcoffeebeans.jpg.webp") no-repeat center center fixed;
   background-color: transparent !important;
   background-size: flex;
   background-repeat: no-repeat;
@@ -480,6 +487,7 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
  </div>
  </div>
+
 <!-- Products Section -->
 <div id="menu-container"></div>
 
