@@ -414,7 +414,39 @@
     display: none; /* Hide login/register on mobile */
   }
 }
+.menu-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(30, 20, 0, 0.7);
+    box-shadow: 0 0 10px #ffcc00;
+  }
 
+  .menu-table th, .menu-table td {
+    border: 1px solid #ffcc00;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .menu-table th {
+    background-color: rgba(255, 204, 0, 0.2);
+    font-weight: bold;
+    color: #ffcc00;
+  }
+
+  .menu-table img {
+    border-radius: 6px;
+    box-shadow: 0 0 6px #ffcc00;
+  }
+
+  .category-title {
+    color: #ffcc00;
+    font-size: 26px;
+    margin-top: 40px;
+    text-align: center;
+    text-shadow: 0 0 6px #ffcc00;
+  }
   </style>
 </head>
 <body>
@@ -997,30 +1029,37 @@ s0.parentNode.insertBefore(s1,s0);
     title.textContent = category;
     categoryDiv.appendChild(title);
 
-    // Cards container
-    const cards = document.createElement("div");
-    cards.classList.add("card-container");
+    // Create table
+    const table = document.createElement("table");
+    table.classList.add("menu-table");
 
+    // Table header
+    table.innerHTML = `
+      <tr>
+        <th>Image</th>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Add</th>
+      </tr>
+    `;
+
+    // Table rows for products
     products.forEach(product => {
-      const card = document.createElement("div");
-      card.classList.add("service-card");
-
-      card.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <div class="service-name">${product.name}</div>
-        <div class="price">${product.price} EGP</div>
-        <div>Stock: ${product.stock}</div>
-        <div class="quantity-container">
-          <button class="btn-glow">-</button>
-          <input type="number" value="1" min="1">
-          <button class="btn-glow">+</button>
-        </div>
-        <button class="btn-glow">Add to Cart</button>
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td><img src="${product.image}" alt="${product.name}" width="60"></td>
+        <td>${product.name}</td>
+        <td>${product.price} EGP</td>
+        <td>${product.stock}</td>
+        <td>
+          <button class="btn-glow">Add to Cart</button>
+        </td>
       `;
-      cards.appendChild(card);
+      table.appendChild(row);
     });
 
-    categoryDiv.appendChild(cards);
+    categoryDiv.appendChild(table);
     container.appendChild(categoryDiv);
   }
 </script>
