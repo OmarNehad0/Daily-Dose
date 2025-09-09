@@ -1,0 +1,584 @@
+{
+  "products": [
+    {
+      "id": "p-classic-tea",
+      "name": "Classic Tea",
+      "price": 22.0,
+      "sku": "HOT-TEA-CLS",
+      "category": "Hot Drink",
+      "stock": 20,
+      "avg_cost": 5.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-green-tea",
+      "name": "Green Tea",
+      "price": 24.0,
+      "sku": "HOT-TEA-GRN",
+      "category": "Hot Drink",
+      "stock": 20,
+      "avg_cost": 6.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-flavor-tea",
+      "name": "Flavor Tea",
+      "price": 28.0,
+      "sku": "HOT-TEA-FLV",
+      "category": "Hot Drink",
+      "stock": 18.0,
+      "avg_cost": 7.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-herbs",
+      "name": "Herbs",
+      "price": 22.0,
+      "sku": "HOT-TEA-HRB",
+      "category": "Hot Drink",
+      "stock": 20,
+      "avg_cost": 5.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-hot-chocolate",
+      "name": "Hot Chocolate",
+      "price": 53.0,
+      "sku": "HOT-CHOC",
+      "category": "Hot Drink",
+      "stock": 15,
+      "avg_cost": 12.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-hot-cider",
+      "name": "Hot Cider",
+      "price": 53.0,
+      "sku": "HOT-CID",
+      "category": "Hot Drink",
+      "stock": 15,
+      "avg_cost": 12.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-hot-oreo",
+      "name": "Hot Oreo",
+      "price": 53.0,
+      "sku": "HOT-OREO",
+      "category": "Hot Drink",
+      "stock": 15,
+      "avg_cost": 12.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-hot-lotus",
+      "name": "Hot Lotus",
+      "price": 53.0,
+      "sku": "HOT-LOT",
+      "category": "Hot Drink",
+      "stock": 15,
+      "avg_cost": 12.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-turkish-small",
+      "name": "Turkish Coffee (Small)",
+      "price": 33.0,
+      "sku": "HOT-TURK-S",
+      "category": "Hot Coffee",
+      "stock": 14.0,
+      "avg_cost": 8.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-turkish-large",
+      "name": "Turkish Coffee (Large)",
+      "price": 43.0,
+      "sku": "HOT-TURK-L",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 10.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-french-coffee",
+      "name": "French Coffee",
+      "price": 52.0,
+      "sku": "HOT-FRN",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 12.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-french-flavor",
+      "name": "French Coffee Flavor",
+      "price": 62.0,
+      "sku": "HOT-FRN-FLV",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 14.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-espresso-small",
+      "name": "Espresso (Single)",
+      "price": 33.0,
+      "sku": "HOT-ESP-S",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 8.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-espresso-double",
+      "name": "Espresso (Double)",
+      "price": 43.0,
+      "sku": "HOT-ESP-D",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 10.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-macchiato-small",
+      "name": "Macchiato (Small)",
+      "price": 43.0,
+      "sku": "HOT-MAC-S",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 9.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-macchiato-large",
+      "name": "Macchiato (Large)",
+      "price": 53.0,
+      "sku": "HOT-MAC-L",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 11.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-latte",
+      "name": "Latte",
+      "price": 52.0,
+      "sku": "HOT-LAT",
+      "category": "Hot Coffee",
+      "stock": 25.0,
+      "avg_cost": 107.2,
+      "tax_rate": null
+    },
+    {
+      "id": "p-cappuccino",
+      "name": "Cappuccino",
+      "price": 62.0,
+      "sku": "HOT-CAP",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 14.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-moca",
+      "name": "Mocha",
+      "price": 72.0,
+      "sku": "HOT-MOC",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 16.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-white-moca",
+      "name": "White Mocha",
+      "price": 72.0,
+      "sku": "HOT-WMOC",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 16.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-spanish-latte",
+      "name": "Spanish Latte",
+      "price": 72.0,
+      "sku": "HOT-SPNL",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 16.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-caramel-macchiato-small",
+      "name": "Caramel Macchiato (Small)",
+      "price": 52.0,
+      "sku": "HOT-CMAC-S",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 13.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-caramel-macchiato-large",
+      "name": "Caramel Macchiato (Large)",
+      "price": 62.0,
+      "sku": "HOT-CMAC-L",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 15.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-flat-white",
+      "name": "Flat White",
+      "price": 78.0,
+      "sku": "HOT-FWHT",
+      "category": "Hot Coffee",
+      "stock": 15,
+      "avg_cost": 18.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-ice-cappuccino",
+      "name": "Iced Cappuccino",
+      "price": 68.0,
+      "sku": "ICE-CAP",
+      "category": "Iced Coffee",
+      "stock": 15,
+      "avg_cost": 14.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-ice-latte",
+      "name": "Iced Latte",
+      "price": 68.0,
+      "sku": "ICE-LAT",
+      "category": "Iced Coffee",
+      "stock": 15,
+      "avg_cost": 14.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-ice-moca",
+      "name": "Iced Mocha",
+      "price": 72.0,
+      "sku": "ICE-MOC",
+      "category": "Iced Coffee",
+      "stock": 15,
+      "avg_cost": 16.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-ice-white-moca",
+      "name": "Iced White Mocha",
+      "price": 72.0,
+      "sku": "ICE-WMOC",
+      "category": "Iced Coffee",
+      "stock": 15,
+      "avg_cost": 16.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-ice-spanish-latte",
+      "name": "Iced Spanish Latte",
+      "price": 72.0,
+      "sku": "ICE-SPNL",
+      "category": "Iced Coffee",
+      "stock": 15,
+      "avg_cost": 16.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-ice-chocolate",
+      "name": "Iced Chocolate",
+      "price": 68.0,
+      "sku": "ICE-CHOC",
+      "category": "Iced Coffee",
+      "stock": 15,
+      "avg_cost": 14.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-smoothie-mango",
+      "name": "Mango Smoothie",
+      "price": 62.0,
+      "sku": "SMO-MNG",
+      "category": "Smoothie",
+      "stock": 10,
+      "avg_cost": 13.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-smoothie-strawberry",
+      "name": "Strawberry Smoothie",
+      "price": 62.0,
+      "sku": "SMO-STR",
+      "category": "Smoothie",
+      "stock": 10,
+      "avg_cost": 13.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-smoothie-blueberry",
+      "name": "Blueberry Smoothie",
+      "price": 62.0,
+      "sku": "SMO-BLU",
+      "category": "Smoothie",
+      "stock": 10,
+      "avg_cost": 13.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-smoothie-passion",
+      "name": "Passion Fruit Smoothie",
+      "price": 62.0,
+      "sku": "SMO-PAS",
+      "category": "Smoothie",
+      "stock": 10,
+      "avg_cost": 13.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-smoothie-kiwi",
+      "name": "Kiwi Smoothie",
+      "price": 62.0,
+      "sku": "SMO-KIW",
+      "category": "Smoothie",
+      "stock": 10,
+      "avg_cost": 13.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-smoothie-lemon",
+      "name": "Lemon Smoothie",
+      "price": 58.0,
+      "sku": "SMO-LEM",
+      "category": "Smoothie",
+      "stock": 10,
+      "avg_cost": 12.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-smoothie-lemon-mint",
+      "name": "Lemon Mint Smoothie",
+      "price": 58.0,
+      "sku": "SMO-LMNT",
+      "category": "Smoothie",
+      "stock": 10,
+      "avg_cost": 12.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-frappe-moca",
+      "name": "Mocha Frappe",
+      "price": 72.0,
+      "sku": "FRP-MOC",
+      "category": "Frappe",
+      "stock": 12,
+      "avg_cost": 15.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-frappe-white-moca",
+      "name": "White Mocha Frappe",
+      "price": 72.0,
+      "sku": "FRP-WMOC",
+      "category": "Frappe",
+      "stock": 12,
+      "avg_cost": 15.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-frappe-caramel",
+      "name": "Caramel Frappe",
+      "price": 72.0,
+      "sku": "FRP-CAR",
+      "category": "Frappe",
+      "stock": 12,
+      "avg_cost": 15.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-frappe-lotus",
+      "name": "Lotus Frappe",
+      "price": 72.0,
+      "sku": "FRP-LOT",
+      "category": "Frappe",
+      "stock": 12,
+      "avg_cost": 15.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-frappe-coffee",
+      "name": "Coffee Frappe",
+      "price": 68.0,
+      "sku": "FRP-COF",
+      "category": "Frappe",
+      "stock": 12,
+      "avg_cost": 14.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-milkshake-vanilla",
+      "name": "Vanilla Milkshake",
+      "price": 78.0,
+      "sku": "MSK-VAN",
+      "category": "Milkshake",
+      "stock": 10,
+      "avg_cost": 16.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-milkshake-chocolate",
+      "name": "Chocolate Milkshake",
+      "price": 78.0,
+      "sku": "MSK-CHO",
+      "category": "Milkshake",
+      "stock": 10,
+      "avg_cost": 16.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-milkshake-caramel",
+      "name": "Caramel Milkshake",
+      "price": 78.0,
+      "sku": "MSK-CAR",
+      "category": "Milkshake",
+      "stock": 10,
+      "avg_cost": 16.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-milkshake-strawberry",
+      "name": "Strawberry Milkshake",
+      "price": 78.0,
+      "sku": "MSK-STR",
+      "category": "Milkshake",
+      "stock": 10,
+      "avg_cost": 16.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-milkshake-blueberry",
+      "name": "Blueberry Milkshake",
+      "price": 78.0,
+      "sku": "MSK-BLU",
+      "category": "Milkshake",
+      "stock": 10,
+      "avg_cost": 16.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-milkshake-mango",
+      "name": "Mango Milkshake",
+      "price": 78.0,
+      "sku": "MSK-MNG",
+      "category": "Milkshake",
+      "stock": 10,
+      "avg_cost": 16.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-milkshake-oreo",
+      "name": "Oreo Milkshake",
+      "price": 88.0,
+      "sku": "MSK-ORE",
+      "category": "Milkshake",
+      "stock": 10,
+      "avg_cost": 18.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-milkshake-lotus",
+      "name": "Lotus Milkshake",
+      "price": 88.0,
+      "sku": "MSK-LOT",
+      "category": "Milkshake",
+      "stock": 10,
+      "avg_cost": 18.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-milkshake-pistachio",
+      "name": "Pistachio Milkshake",
+      "price": 88.0,
+      "sku": "MSK-PIS",
+      "category": "Milkshake",
+      "stock": 10,
+      "avg_cost": 18.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-mojito-classic",
+      "name": "Mojito Classic",
+      "price": 62.0,
+      "sku": "SODA-MOJ-CLS",
+      "category": "Soda",
+      "stock": 10,
+      "avg_cost": 13.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-mojito-flavor",
+      "name": "Mojito Flavor",
+      "price": 68.0,
+      "sku": "SODA-MOJ-FLV",
+      "category": "Soda",
+      "stock": 10,
+      "avg_cost": 14.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-mojito-redbull",
+      "name": "Mojito Red Bull",
+      "price": 98.0,
+      "sku": "SODA-MOJ-RB",
+      "category": "Soda",
+      "stock": 10,
+      "avg_cost": 20.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-water",
+      "name": "Water",
+      "price": 10.0,
+      "sku": "SOFT-WAT",
+      "category": "Soft Drink",
+      "stock": 30,
+      "avg_cost": 2.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-v7",
+      "name": "V7",
+      "price": 45.0,
+      "sku": "SOFT-V7",
+      "category": "Soft Drink",
+      "stock": 20,
+      "avg_cost": 8.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-twist",
+      "name": "Twist",
+      "price": 35.0,
+      "sku": "SOFT-TWST",
+      "category": "Soft Drink",
+      "stock": 20,
+      "avg_cost": 7.0,
+      "tax_rate": null
+    },
+    {
+      "id": "p-redbull",
+      "name": "Red Bull",
+      "price": 78.0,
+      "sku": "SOFT-RB",
+      "category": "Soft Drink",
+      "stock": 20,
+      "avg_cost": 15.0,
+      "tax_rate": null
+    }
+  ]
+}
