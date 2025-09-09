@@ -433,238 +433,6 @@
     menu.classList.toggle('show');
   }
 
-
-  <script>
-    const file = new URLSearchParams(window.location.search).get('file');
-
-    const data = {
-      'Chambers Of Xeric': [
-        { name: 'COX - Trio', price: 12000000, image: 'https://oldschool.runescape.wiki/images/thumb/Great_Olm_%28Christmas%29.png/800px-Great_Olm_%28Christmas%29.png?48b39' },
-        { name: 'Challenge Mode - Mass', price: 20000000, image: 'https://oldschool.runescape.wiki/images/thumb/Great_Olm_%28Christmas%29.png/800px-Great_Olm_%28Christmas%29.png?48b39' },
-        { name: 'Challenge Mode - 3-5', price: 25000000, image: 'https://oldschool.runescape.wiki/images/thumb/Great_Olm_%28Christmas%29.png/800px-Great_Olm_%28Christmas%29.png?48b39' },
-        { name: 'Twisted Bow (TBow)', price: 10000000, image: 'https://oldschool.runescape.wiki/images/thumb/Great_Olm_%28Christmas%29.png/800px-Great_Olm_%28Christmas%29.png?48b39' },
-        { name: 'Bow of Faerdhinen (Bowfa)', price: 12000000, image: 'https://oldschool.runescape.wiki/images/thumb/Great_Olm_%28Christmas%29.png/800px-Great_Olm_%28Christmas%29.png?48b39' },
-        { name: 'Tentacle Whip/Toxic Blowpipe (BP)', price: 15000000, image: 'https://oldschool.runescape.wiki/images/thumb/Great_Olm_%28Christmas%29.png/800px-Great_Olm_%28Christmas%29.png?48b39' }
-      ],
-      'Desert Treasure 2 Bosses': [
-        { name: 'Duke Sucellus', price: 1350000, image: 'https://oldschool.runescape.wiki/images/thumb/Duke_Sucellus.png/800px-Duke_Sucellus.png?d588a' },
-        { name: 'Vardorvis', price: 1500000, image: 'https://oldschool.runescape.wiki/images/Vardorvis.png?48af8' },
-        { name: 'The Whisperer', price: 2000000, image: 'https://oldschool.runescape.wiki/images/thumb/The_Whisperer.png/320px-The_Whisperer.png?aedab' },
-        { name: 'The Leviathan', price: 2000000, image: 'https://oldschool.runescape.wiki/images/thumb/The_Leviathan.png/800px-The_Leviathan.png?d588a' },
-        { name: 'Awakened Duke', price: 120000000, image: 'https://oldschool.runescape.wiki/images/thumb/Duke_Sucellus.png/800px-Duke_Sucellus.png?d588a' },
-        { name: 'Awakened Leviathan', price: 150000000, image: 'https://oldschool.runescape.wiki/images/thumb/The_Leviathan.png/800px-The_Leviathan.png?d588a' },
-        { name: 'Awakened Vardorvis', price: 120000000, image: 'https://oldschool.runescape.wiki/images/Vardorvis.png?48af8' },
-        { name: 'Awakened Whisperer', price: 180000000, image: 'https://oldschool.runescape.wiki/images/thumb/The_Whisperer.png/320px-The_Whisperer.png?aedab' },
-        { name: 'BTorva', price: 400000000, image: 'https://oldschool.runescape.wiki/images/thumb/Ancient_blood_ornament_kit_detail.png/800px-Ancient_blood_ornament_kit_detail.png?4b3c1' }
-      ],
-      'FireCapes': [
-        { name: '90+ Range + Rigour', price: 13000000, image: 'https://oldschool.runescape.wiki/images/thumb/Fire_cape_detail.png/800px-Fire_cape_detail.png?f1d08' },
-        { name: '80+ Range + Rigour', price: 18000000, image: 'https://oldschool.runescape.wiki/images/thumb/Fire_cape_detail.png/800px-Fire_cape_detail.png?f1d08' },
-        { name: '75+ Range + Rigour', price: 24000000, image: 'https://oldschool.runescape.wiki/images/thumb/Fire_cape_detail.png/800px-Fire_cape_detail.png?f1d08' },
-        { name: '85-99 Range / -70 Defence', price: 20000000, image: 'https://oldschool.runescape.wiki/images/thumb/Fire_cape_detail.png/800px-Fire_cape_detail.png?f1d08' },
-        { name: '75-84 Range / -70 Defence', price: 30000000, image: 'https://oldschool.runescape.wiki/images/thumb/Fire_cape_detail.png/800px-Fire_cape_detail.png?f1d08' },
-        { name: '70-74 Range / -70 Defence', price: 40000000, image: 'https://oldschool.runescape.wiki/images/thumb/Fire_cape_detail.png/800px-Fire_cape_detail.png?f1d08' },
-        { name: '61-69 Range / -70 Defence', price: 60000000, image: 'https://oldschool.runescape.wiki/images/thumb/Fire_cape_detail.png/800px-Fire_cape_detail.png?f1d08' }
-      ],
-      'God Wars Dungeon': [
-        { name: 'Armadyl (No Chins)', price: 1800000, image: 'https://oldschool.runescape.wiki/images/thumb/Kree%27arra.png/800px-Kree%27arra.png?ba75c' },
-        { name: 'Armadyl (Red Chins)', price: 1700000, image: 'https://oldschool.runescape.wiki/images/thumb/Kree%27arra.png/800px-Kree%27arra.png?ba75c' },
-        { name: 'Armadyl (Black Chins)', price: 1400000, image: 'https://oldschool.runescape.wiki/images/thumb/Kree%27arra.png/800px-Kree%27arra.png?ba75c' },
-        { name: 'Bandos', price: 1500000, image: 'https://oldschool.runescape.wiki/images/thumb/General_Graardor.png/280px-General_Graardor.png?4dd90' },
-        { name: 'Saradomin', price: 1200000, image: 'https://oldschool.runescape.wiki/images/thumb/Commander_Zilyana.png/250px-Commander_Zilyana.png?c5eaa' },
-        { name: 'Zamorak', price: 1500000, image: 'https://oldschool.runescape.wiki/images/thumb/K%27ril_Tsutsaroth.png/280px-K%27ril_Tsutsaroth.png?73bda' },
-        { name: 'Nex - Small team (6-8)', price: 2000000, image: 'https://oldschool.runescape.wiki/images/thumb/Nex.png/800px-Nex.png?2a1b3' },
-        { name: 'Nex - 5 Mans', price: 4000000, image: 'https://oldschool.runescape.wiki/images/thumb/Nex.png/800px-Nex.png?2a1b3' },
-        { name: 'Nex - 3 Mans', price: 6000000, image: 'https://oldschool.runescape.wiki/images/thumb/Nex.png/800px-Nex.png?2a1b3' }
-      ],
-      'Infernal - Quivers': [
-  { name: "Quiver Max Gear - Login", price: 150000000, image: "https://oldschool.runescape.wiki/images/thumb/Dizana%27s_quiver_detail.png/150px-Dizana%27s_quiver_detail.png?f6c23" },
-  { name: "Quiver Budget Gear - Login", price: 200000000, image: "https://oldschool.runescape.wiki/images/thumb/Dizana%27s_quiver_detail.png/150px-Dizana%27s_quiver_detail.png?f6c23" },
-  { name: "Twisted Bow (Tbow)", price: 200000000, image: "https://oldschool.runescape.wiki/images/Infernal_cape.png?80b36" },
-  { name: "Bow of Faerdhinen (Bowfa)", price: 230000000, image: "https://oldschool.runescape.wiki/images/Infernal_cape.png?80b36" },
-  { name: "Armadyl Crossbow (ACB)", price: 300000000, image: "https://oldschool.runescape.wiki/images/Infernal_cape.png?80b36" },
-  { name: "Rune Crossbow (RCB)", price: 400000000, image: "https://oldschool.runescape.wiki/images/Infernal_cape.png?80b36" },
-  { name: "Slayer Task (Max Gear)", price: 160000000, image: "https://oldschool.runescape.wiki/images/Infernal_cape.png?80b36" },
-  { name: "Additional cost for No Rigour", price: 30000000, image: "https://oldschool.runescape.wiki/images/Infernal_cape.png?80b36" },
-  { name: "Additional cost for lower than 94 Mage", price: 60000000, image: "https://oldschool.runescape.wiki/images/Infernal_cape.png?80b36" },
-  { name: "Zerker Tbow", price: 350000000, image: "https://oldschool.runescape.wiki/images/Infernal_cape.png?80b36" },
-  { name: "Zerker ACB", price: 500000000, image: "https://oldschool.runescape.wiki/images/Infernal_cape.png?80b36" },
-  { name: "Pure Tbow", price: 450000000, image: "https://oldschool.runescape.wiki/images/Infernal_cape.png?80b36" },
-  { name: "Pure ACB", price: 550000000, image: "https://oldschool.runescape.wiki/images/Infernal_cape.png?80b36" },
-  { name: "Pure RCB", price: 800000000, image: "https://oldschool.runescape.wiki/images/Infernal_cape.png?80b36" },
-  { name: "6 Jad - Tbow", price: 100000000, image: "https://oldschool.runescape.wiki/images/thumb/JalTok-Jad.png/280px-JalTok-Jad.png?7e369" },
-  { name: "6 Jad - BP", price: 150000000, image: "https://oldschool.runescape.wiki/images/thumb/JalTok-Jad.png/280px-JalTok-Jad.png?7e369" }
-],
-
-'MegaScales': [
-  { name: "MegaScales - T-Bow Guaranteed", price: 27000000000, image: "https://oldschool.runescape.wiki/images/thumb/Twisted_bow_detail.png/150px-Twisted_bow_detail.png?7aa10" },
-  { name: "3+12 Olm Run", price: 90000000, image: "https://oldschool.runescape.wiki/images/thumb/Great_Olm_%28Christmas%29.png/800px-Great_Olm_%28Christmas%29.png?48b39" },
-  { name: "100% Purple Chance", price: 950000000, image: "https://oldschool.runescape.wiki/images/thumb/Great_Olm_%28Christmas%29.png/800px-Great_Olm_%28Christmas%29.png?48b39" },
-  { name: "100% +1 Prayer Scroll Protection", price: 1550000000, image: "https://oldschool.runescape.wiki/images/thumb/Great_Olm_%28Christmas%29.png/800px-Great_Olm_%28Christmas%29.png?48b39" },
-  { name: "100% +2 Prayer Scroll Protection", price: 2100000000, image: "https://oldschool.runescape.wiki/images/thumb/Great_Olm_%28Christmas%29.png/800px-Great_Olm_%28Christmas%29.png?48b39" }
-],
-'Other Bosses': [
-  {
-    name: "Tormented Demon - High Gears",
-    price: 1000000,
-    image: "https://oldschool.runescape.wiki/images/thumb/Tormented_Demon_%281%29.png/320px-Tormented_Demon_%281%29.png?6c099"
-  },
-  {
-    name: "Tormented Demon - Low Gears",
-    price: 1200000,
-    image: "https://oldschool.runescape.wiki/images/thumb/Tormented_Demon_%281%29.png/320px-Tormented_Demon_%281%29.png?6c099"
-  },
-  {
-    name: "Arraxor",
-    price: 1000000,
-    image: "https://oldschool.runescape.wiki/images/thumb/Araxxor.png/280px-Araxxor.png?35d2e"
-  },
-  {
-    name: "Abyssal Sire",
-    price: 1000000,
-    image: "https://oldschool.runescape.wiki/images/thumb/Abyssal_Sire.png/280px-Abyssal_Sire.png?d2205"
-  },
-  {
-    name: "Alchemical Hydra - Twisted Bow or Bowfa or DHL",
-    price: 800000,
-    image: "https://oldschool.runescape.wiki/images/thumb/Alchemical_Hydra_%28serpentine%29.png/272px-Alchemical_Hydra_%28serpentine%29.png?925dd"
-  },
-  {
-    name: "Alchemical Hydra - BP",
-    price: 1000000,
-    image: "https://oldschool.runescape.wiki/images/thumb/Alchemical_Hydra_%28serpentine%29.png/272px-Alchemical_Hydra_%28serpentine%29.png?925dd"
-  },
-  {
-    name: "Barrows Brothers",
-    price: 1000000,
-    image: "https://oldschool.runescape.wiki/images/thumb/Dharok_the_Wretched.png/38px-Dharok_the_Wretched.png?33092"
-  },
-  {
-    name: "Cerbrus",
-    price: 750000,
-    image: "https://oldschool.runescape.wiki/images/thumb/Cerberus_%28Christmas%29.png/280px-Cerberus_%28Christmas%29.png?e8bc2"
-  },
-  {
-    name: "Corporeal Beast",
-    price: 4000000,
-    image: "https://oldschool.runescape.wiki/images/thumb/Corporeal_Beast_%28Christmas%29.png/270px-Corporeal_Beast_%28Christmas%29.png?c413a"
-  },
-  {
-    name: "Dagganoth Kings - Rex Only",
-    price: 450000,
-    image: "https://oldschool.runescape.wiki/images/thumb/Dagannoth_Supreme.png/230px-Dagannoth_Supreme.png?81f00"
-  },
-  {
-    name: "Dagganoth Kings - Whole rotation",
-    price: 1200000,
-    image: "https://oldschool.runescape.wiki/images/thumb/Dagannoth_Supreme.png/230px-Dagannoth_Supreme.png?81f00"
-  },
-  {
-    name: "Dagganoth Kings - Slayer Task",
-    price: 800000,
-    image: "https://oldschool.runescape.wiki/images/thumb/Dagannoth_Supreme.png/230px-Dagannoth_Supreme.png?81f00"
-  },
-  {
-    name: "Hueycoatl - Mass",
-    price: 300000,
-    image: "https://oldschool.runescape.wiki/images/thumb/The_Hueycoatl.png/560px-The_Hueycoatl.png?7b216"
-  },
-  {
-    name: "Royal Titans - SOLO",
-    price: 2000000,
-    image: "https://oldschool.runescape.wiki/images/thumb/Branda_the_Fire_Queen.png/800px-Branda_the_Fire_Queen.png?0687c"
-  }
-],
-'The Gauntlet': [
-  { name: "Normal - 70+", price: 2000000, image: "https://oldschool.runescape.wiki/images/thumb/Youngllef_%28follower%29.png/280px-Youngllef_%28follower%29.png?fc90e" },
-  { name: "Stats 99", price: 2900000, image: "https://oldschool.runescape.wiki/images/thumb/Corrupted_Youngllef.png/1024px-Corrupted_Youngllef.png?fc90e" },
-  { name: "Stats 95+", price: 3200000, image: "https://oldschool.runescape.wiki/images/thumb/Corrupted_Youngllef.png/1024px-Corrupted_Youngllef.png?fc90e" },
-  { name: "Stats 90+", price: 3600000, image: "https://oldschool.runescape.wiki/images/thumb/Corrupted_Youngllef.png/1024px-Corrupted_Youngllef.png?fc90e" },
-  { name: "Stats 85+", price: 3900000, image: "https://oldschool.runescape.wiki/images/thumb/Corrupted_Youngllef.png/1024px-Corrupted_Youngllef.png?fc90e" },
-  { name: "Stats 80+", price: 4200000, image: "https://oldschool.runescape.wiki/images/thumb/Corrupted_Youngllef.png/1024px-Corrupted_Youngllef.png?fc90e" },
-  { name: "Stats 75+", price: 4700000, image: "https://oldschool.runescape.wiki/images/thumb/Corrupted_Youngllef.png/1024px-Corrupted_Youngllef.png?fc90e" }
-],
-
-'Theatre Of Blood': [
-  { name: "Login - With Scythe", price: 10000000, image: "https://oldschool.runescape.wiki/images/thumb/Lil%27_Zik.png/1024px-Lil%27_Zik.png?5a023" },
-  { name: "Login - Without Scy", price: 12000000, image: "https://oldschool.runescape.wiki/images/thumb/Lil%27_Zik.png/1024px-Lil%27_Zik.png?5a023" },
-  { name: "Hard Mode (Login) - With Scythe", price: 22000000, image: "https://oldschool.runescape.wiki/images/thumb/Lil%27_Zik.png/1024px-Lil%27_Zik.png?5a023" },
-  { name: "Hard Mode (Login) - Without Scythe", price: 35000000, image: "https://oldschool.runescape.wiki/images/thumb/Lil%27_Zik.png/1024px-Lil%27_Zik.png?5a023" }
-],
-'Tombs Of Amascuts': [
-  { name: "150 Raid Level - With Budget Gear", price: 12000000, image: "https://oldschool.runescape.wiki/images/thumb/Elidinis%27_Warden.png/180px-Elidinis%27_Warden.png?c9f68" },
-  { name: "200 Raid Level - With Budget Gears", price: 14000000, image: "https://oldschool.runescape.wiki/images/thumb/Elidinis%27_Warden.png/180px-Elidinis%27_Warden.png?c9f68" },
-  { name: "250 Raid Level - With Budget Gears", price: 16000000, image: "https://oldschool.runescape.wiki/images/thumb/Elidinis%27_Warden.png/180px-Elidinis%27_Warden.png?c9f68" },
-  { name: "300 Raid Level", price: 17000000, image: "https://oldschool.runescape.wiki/images/thumb/Elidinis%27_Warden.png/180px-Elidinis%27_Warden.png?c9f68" },
-  { name: "350 Raid Level (Ava's Kit)", price: 25000000, image: "https://oldschool.runescape.wiki/images/thumb/Elidinis%27_Warden.png/180px-Elidinis%27_Warden.png?c9f68" },
-  { name: "400 Raid Level", price: 35000000, image: "https://oldschool.runescape.wiki/images/thumb/Elidinis%27_Warden.png/180px-Elidinis%27_Warden.png?c9f68" },
-  { name: "425 Raid Level (Ward Kit)", price: 60000000, image: "https://oldschool.runescape.wiki/images/thumb/Elidinis%27_Warden.png/180px-Elidinis%27_Warden.png?c9f68" },
-  { name: "450 Raid Level", price: 100000000, image: "https://oldschool.runescape.wiki/images/thumb/Elidinis%27_Warden.png/180px-Elidinis%27_Warden.png?c9f68" },
-  { name: "500 Raid Level (Fang Kit)", price: 240000000, image: "https://oldschool.runescape.wiki/images/thumb/Elidinis%27_Warden.png/180px-Elidinis%27_Warden.png?c9f68" }
-],
-
-'Wilderness Bosses': [
-  { name: "Callisto", price: 1800000, image: "https://oldschool.runescape.wiki/images/Callisto.png?bfba7" },
-  { name: "Artio", price: 1000000, image: "https://oldschool.runescape.wiki/images/Callisto.png?bfba7" },
-  { name: "Chaos Fanatic", price: 800000, image: "https://oldschool.runescape.wiki/images/thumb/Chaos_Fanatic.png/180px-Chaos_Fanatic.png?8871d" },
-  { name: "Chaos Elemental", price: 700000, image: "https://oldschool.runescape.wiki/images/thumb/Chaos_Fanatic.png/180px-Chaos_Fanatic.png?8871d" },
-  { name: "Crazy Archaeologist", price: 600000, image: "https://oldschool.runescape.wiki/images/thumb/Chaos_Fanatic.png/180px-Chaos_Fanatic.png?8871d" },
-  { name: "Venenatis", price: 1500000, image: "https://oldschool.runescape.wiki/images/thumb/Venenatis.png/280px-Venenatis.png?13693" },
-  { name: "Spindel", price: 1000000, image: "https://oldschool.runescape.wiki/images/thumb/Venenatis.png/280px-Venenatis.png?13693" },
-  { name: "Vet'ion", price: 1500000, image: "https://oldschool.runescape.wiki/images/thumb/Calvar%27ion.png/180px-Calvar%27ion.png?6268f" },
-  { name: "Calvar'ion", price: 1000000, image: "https://oldschool.runescape.wiki/images/thumb/Calvar%27ion.png/180px-Calvar%27ion.png?6268f" },
-  { name: "Scorpia", price: 800000, image: "https://oldschool.runescape.wiki/images/thumb/Scorpion.png/130px-Scorpion.png?79d06" },
-  { name: "King Black Dragon (KBD) - Normal Gear", price: 600000, image: "https://oldschool.runescape.wiki/images/thumb/King_Black_Dragon_%28Christmas%29.png/290px-King_Black_Dragon_%28Christmas%29.png?a4b99" },
-  { name: "King Black Dragon (KBD) - w/Dragon Hunter Items", price: 350000, image: "https://oldschool.runescape.wiki/images/thumb/King_Black_Dragon_%28Christmas%29.png/290px-King_Black_Dragon_%28Christmas%29.png?a4b99" }
-]
-    };
-
-    const containerMap = {
-      'Chambers Of Xeric': 'chambers',
-      'Desert Treasure 2 Bosses': 'dt2',
-      'FireCapes': 'firecapes',
-      'God Wars Dungeon': 'gwd',
-      'Other Bosses': 'otherbosses',
-      'MegaScales': 'megascales',
-      'Infernal - Quivers': 'infernal-quivers',
-      'The Gauntlet': 'gauntlet',
-      'Theatre Of Blood': 'tob',
-      'Tombs Of Amascuts': 'tombs',
-      'Wilderness Bosses': 'wilderness'
-    };
-
-   if (data[file]) {
-    const containerId = containerMap[file];
-    const container = document.getElementById(containerId);
-    container.style.display = 'flex';
-
-    container.innerHTML = `<div class='category-title'>${file}</div>`;
-
-    data[file].forEach(item => {
-      const card = document.createElement('div');
-      card.className = 'service-card';
-      container.appendChild(card);
-
-      let priceM = (item.price / 1000000).toFixed(1);
-      let priceUSD = (item.price * 0.21 / 1000000).toFixed(2);
-      const itemId = item.name.replace(/\s+/g, '-') + '-' + Math.floor(Math.random() * 100000);
-
-      card.innerHTML = `
-        <img src="${item.image}" alt="${item.name}" style="width: 100px; height: 100px; margin-right: 10px;">
-        <div class="service-name">${item.name}</div>
-        <div id="price-${itemId}" class="price">${priceM}m (~$${priceUSD})</div>
-        <div class="quantity-container">
-          <button class="btn-glow" onclick="changeQuantity('${itemId}', -1, ${item.price})">−</button>
-          <input id="${itemId}" type="number" value="1" min="1" />
-          <button class="btn-glow" onclick="changeQuantity('${itemId}', 1, ${item.price})">+</button>
-        </div>
-        <button class="btn-glow" style="width: 100%; margin-top: 8px;" onclick="addToCart('${item.name}', ${item.price}, '${itemId}')">Add to Cart</button>
-      `;
-    });
-  }
-
-
-  </script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -680,6 +448,61 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
  </div>
  </div>
+<!-- Products Section -->
+<div id="menu-container"></div>
+
+<script>
+  fetch("products.json")
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById("menu-container");
+
+      // Group products by category
+      const categories = {};
+      data.products.forEach(p => {
+        if (!categories[p.category]) categories[p.category] = [];
+        categories[p.category].push(p);
+      });
+
+      // Build category sections
+      for (const [category, products] of Object.entries(categories)) {
+        const categoryDiv = document.createElement("div");
+
+        // Category title
+        const title = document.createElement("h2");
+        title.classList.add("category-title");
+        title.textContent = category;
+        categoryDiv.appendChild(title);
+
+        // Cards container
+        const cards = document.createElement("div");
+        cards.classList.add("card-container");
+
+        products.forEach(product => {
+          const card = document.createElement("div");
+          card.classList.add("service-card");
+
+          card.innerHTML = `
+            <img src="images/${product.id}.jpg" alt="${product.name}">
+            <div class="service-name">${product.name}</div>
+            <div class="price">${product.price} EGP</div>
+            <div>Stock: ${product.stock}</div>
+            <div class="quantity-container">
+              <button class="btn-glow">-</button>
+              <input type="number" value="1" min="1">
+              <button class="btn-glow">+</button>
+            </div>
+            <button class="btn-glow">Add to Cart</button>
+          `;
+          cards.appendChild(card);
+        });
+
+        categoryDiv.appendChild(cards);
+        container.appendChild(categoryDiv);
+      }
+    })
+    .catch(err => console.error("Error loading products:", err));
+</script>
 
 
 </body>
